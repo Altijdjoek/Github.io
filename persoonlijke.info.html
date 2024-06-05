@@ -1,89 +1,99 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Persoonlijke Informatie</title>
-  <link rel="stylesheet" type="text/css" href="opmaak.css">
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Persoonlijke Informatie</title>
+<style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f2f2f2;
-      color: #333;
-      margin: 0;
-      padding: 0;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
     }
-
     header {
-      background-color: #3498db;
-      padding: 10px;
-      text-align: center;
-      color: white;
+        background-color: #4CAF50;
+        color: white;
+        padding: 1em 0;
+        text-align: center;
     }
-
     nav {
-      background-color: #333;
-      padding: 10px;
-      text-align: center;
+        background-color: #333;
     }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
     }
-
-    section {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: white;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    nav ul li {
+        float: left;
     }
-
-    h2 {
-      color: #3498db;
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
     }
-
-    p {
-      line-height: 1.6;
+    nav ul li a:hover {
+        background-color: #111;
     }
-
+    .main {
+        padding: 20px;
+    }
     footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
-  </style>
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+    h2 {
+        margin-bottom: 10px;
+    }
+    p {
+        text-align: left;
+    }
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+</style>
 </head>
-
 <body>
-
-  <header>
-    <h1>Persoonlijke Informatie</h1>
-  </header>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="Persoonlijke-info.html">persoonlijke informatie</a>
-  </nav>
-
-  <section>
-    <h2>Over Mij</h2>
-    <p>Hallo! Mijn naam is Joek Vlastuin, en ik ben verheugd dat je mijn website bezoekt. Hier kun je meer te weten komen over wie ik ben, mijn passies, en mijn dagelijkse leven. Ik geloof dat het delen van persoonlijke ervaringen en interesses helpt om een connectie te maken met anderen, en ik hoop dat je iets interessants vindt tijdens je bezoek.</p>
-  </section>
-
-  <footer>
-    <p>Ontdek meer op mijn site!</p>
-  </footer>
-
+<header>
+<h1>Welkom op mijn Website</h1>
+</header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="persoonlijke.info.html">Persoonlijke Informatie</a></li>
+</ul>
+</nav>
+<div class="main">
+    <div class="container">
+        <h2>Persoonlijke Informatie</h2>
+        <img src="profile-picture.jpg" alt="Profielfoto" class="profile-pic">
+        <p><strong>Naam:</strong> Jan de Vries</p>
+        <p><strong>Leeftijd:</strong> 28 jaar</p>
+        <p><strong>Woonplaats:</strong> Amsterdam</p>
+        <p><strong>Opleiding:</strong> Informatica aan de Universiteit van Amsterdam</p>
+        <p><strong>Werk:</strong> Softwareontwikkelaar bij Tech Solutions</p>
+        <p><strong>Hobby's:</strong> Lezen, reizen, en programmeren</p>
+    </div>
+</div>
+<footer>
+<p>&copy; 2024 Mijn Website. Alle rechten voorbehouden.</p>
+</footer>
 </body>
-
 </html>
